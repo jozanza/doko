@@ -1,0 +1,18 @@
+[package]
+name = "doko"
+description = "A Solana Party Game"
+version = "0.1.0"
+edition = "2021"
+
+[package.metadata.bundle]
+name = "Turbo Spin Quest"
+identifier = "com.turbo.spinquest"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+# turbo = { version = "0.2.*", package = "turbo-genesis-sdk" }
+turbo = { path = "/Users/jozanza/github/turbo/turbo-genesis-sdk", package = "turbo-genesis-sdk" }
+
+[lib]
+crate-type = ["cdylib"]
